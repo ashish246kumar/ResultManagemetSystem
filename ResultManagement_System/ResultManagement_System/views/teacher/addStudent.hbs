@@ -1,0 +1,56 @@
+
+   {{>header}}
+   <div class="container log mt-2">
+     {{>backButton}}
+    {{>logout}}
+
+   </div>
+
+  <div class="container mt-4 container1">
+    
+        <div class="card card1" >
+                
+          <div class="container text-center mt-5">
+            <h5 class="card-title"> Add Student</h5>
+          </div>
+  <form action="/teacher/add-student" method="POST">
+  <div class="row mb-3 mt-2">
+  
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="roll" class=" col-form-label"> Roll no:</label>
+      <input type="text" class="form-control input-box" id="roll" name="roll_no">
+     
+    </div>
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="dob" class=" col-form-label">Date of Birth:</label>
+      <input type="text" class="form-control input-box" id="dob" name="dob">
+     
+    </div>
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="name" class=" col-form-label">Name:</label>
+      <input type="text" class="form-control input-box" id="name" name="name">
+     
+    </div>
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="score" class=" col-form-label">Score:</label>
+      <input type="text" class="form-control input-box" id="score" name="score">
+     
+    </div>
+
+  </div>
+  
+  
+
+  
+  <div class="container text-center mb-5">
+  <button type="submit" class="btn btn-primary">Add</button>
+  </div>
+</form>
+{{#if message}}
+<h4 class="alert alert-danger mt-4">{{message}}</h4>
+{{/if}}
+</div>
+   </div>
+
+ {{>footer}}
+   

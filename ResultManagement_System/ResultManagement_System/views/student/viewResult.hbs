@@ -1,0 +1,54 @@
+{{>header}}
+
+<div class="main2">
+   
+ <button type="button" class="btn btn2 btn-primary">
+    <a href="/logout" class="text-white" style="text-decoration: none">LogOut</a>
+    </button>  
+</div>
+ <div class="container mt-5 text-center" style="width: 23rem;">
+        <div class="card " >
+         
+         <div class="container card-header text-center bg-secondary text-white">
+      
+             <h4>Result</h4>
+         </div>
+         <div class="row mt-2">
+            <div class="col-md-4 offset-md-1">
+               <b>Roll no:</b>
+            </div>
+            <div class="col-md-4 offset-md-1">
+                <p>{{alldata.roll_no}}</p>
+            </div>
+         </div>
+         <div class="row mt-2">
+            <div class="col-md-4 offset-md-1">
+               <b>Name:</b>
+            </div>
+            <div class="col-md-4 offset-md-1">
+                <p>{{alldata.name}}</p>
+            </div>
+         </div>
+         <div class="row mt-2">
+            <div class="col-md-4 offset-md-1">
+               <b>Dob:</b>
+            </div>
+            <div class="col-md-4 offset-md-1">
+                <p>{{alldata.dob}}</p>
+            </div>
+         </div>
+         <div class="row mt-2">
+            <div class="col-md-4 offset-md-1">
+               <b>Score:</b>
+            </div>
+            <div class="col-md-4 offset-md-1">
+                <p>{{alldata.score}}</p>
+            </div>
+         </div>
+          
+        </div>
+
+
+</div> 
+    
+{{>footer}}

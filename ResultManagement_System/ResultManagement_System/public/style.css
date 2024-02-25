@@ -1,0 +1,75 @@
+
+/* button */
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top:35vh;
+}
+.bt {
+width: 150px; 
+height: 50px; 
+}
+.card1{
+   width:60%;
+   margin-top:2vh;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    
+}
+.table-container {
+    max-height: 300px; 
+    
+    overflow-y: auto;
+    
+  }
+.card-title{
+    font-size: 2vw;
+}
+.log{
+    display: flex;
+    justify-content:space-between;
+   
+}
+.main2{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10px;
+}
+
+@media (max-width:600px){
+ .bt {
+        
+        width: 100px; 
+        height: 50px; 
+       
+    }
+.main{
+    flex-wrap: wrap;
+     
+}
+.card1{
+    width:100%;
+}
+.input-box{
+    width:100%
+}
+.table-container {
+    overflow-x: auto;
+  }
+.btn2{
+    margin-top: 10px;
+}
+  .log{
+ flex-wrap: wrap;
+   }
+.main2{
+display: flex;
+justify-content:center;
+/* margin-right: 10px; */
+} 
+}

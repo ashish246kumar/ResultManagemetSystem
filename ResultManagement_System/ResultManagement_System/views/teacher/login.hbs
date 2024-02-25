@@ -1,0 +1,50 @@
+
+   {{>header}}
+   <div class="container log mt-2">
+   <button type="button" class="btn btn2 btn-primary">
+    <a href="/" class="text-white" style="text-decoration: none">Home</a>
+   </div>
+
+  <div class="container mt-4 container1">
+    
+        <div class="card card1" >
+                
+          <div class="container text-center mt-5">
+            <h5 class="card-title">Teacher Login</h5>
+          </div>
+  <form action="/teacher/login" method="POST">
+  <div class="row mb-3 mt-2">
+  
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="email" class=" col-form-label">Enter your Email</label>
+      <input type="email" class="form-control input-box" id="email" name="email">
+     
+    </div>
+    <div class="col-sm-6 offset-sm-3 ">
+           <label for="password" class=" col-form-label">Enter your Password</label>
+      <input type="password" class="form-control input-box" id="password" name="password">
+     
+    </div>
+
+  </div>
+  <div class="row mb-3 mt-2">
+ <div class="col-sm-6 offset-sm-3">
+ 
+  <span class="text-secondary">New Teacher?</span>
+  <a href="/teacher/register">Register</a>
+</div>
+  </div>
+
+  
+  <div class="container text-center mb-5">
+  <button type="submit" class="btn btn-primary">Login</button>
+  </div>
+</form>
+{{#if message}}
+<h4 class="alert alert-danger mt-4">{{message}}</h4>
+{{/if}}
+</div>
+   </div>
+
+ {{>footer}}
+   

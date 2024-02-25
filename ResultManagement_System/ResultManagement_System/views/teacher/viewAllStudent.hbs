@@ -1,0 +1,61 @@
+
+{{>header}}
+ {{!-- <div class="log container mt-2">
+  <button type="button" class="btn btn-primary">
+    <a href="#" class="text-white" style="text-decoration: none">LogOut</a>
+    </button>
+ </div> --}}
+<div class="container log mt-2">
+   <button type="button" class="btn btn2 btn-primary">
+    <a href="/teacher/add-student" class="text-white" style="text-decoration: none">Add Student</a>
+    </button>
+    {{>logout}}
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="container text-center">
+                <h5><u>All Students</u></h5>
+          </div>
+         <div class="pt-3">
+          <div class="table-container">
+        <table class="table table-primary table-striped table-hover" id="dtHorizontalVertical">
+ 
+    <thead>
+    <tr>
+      <th scope="col">Roll No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Score</th>
+      <th scope="col">Action</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+   
+    
+    {{#each alldata}}
+    <tr>
+      
+       <td>{{this.roll_no}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.dob}}</td>
+      <td>{{this.score}}</td>
+      <td>
+        <a href="/teacher/update-student/{{this.roll_no}}"><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+        <a href="/teacher/delete-student/{{this.roll_no}}"><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+ 
+</table>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+{{>footer}}
+
+ 
+   

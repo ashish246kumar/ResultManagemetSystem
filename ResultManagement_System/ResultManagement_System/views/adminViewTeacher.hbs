@@ -1,0 +1,48 @@
+
+   {{>header}}
+   
+</button>
+ <div class="container text-center">
+  <h3>Admin View</h3>
+ </div>
+  <div class="container log mt-2">
+   <button type="button" class="btn btn2 btn-primary">
+    <a href="/admin/logout" class="text-white" style="text-decoration: none">LogOut</a>
+   </div>
+ {{#each alldata}}
+  <div class="container mt-4 .container2">
+    
+    
+    
+        <div class="card card2 mt-4">
+                
+          
+    <form action="/admin/tdata" method="POST">
+    <div class="row mt-2">
+   <div class="col-sm-4">
+          
+      <input type="text" class="form-control input-box" id="name" name="name" placeholder="name" value={{this.name}}>
+     </div>
+    <div class="col-sm-4">
+          
+      <input type="email" class="form-control input-box" id="email" name="email" placeholder="email" value={{this.email}}>
+     
+    </div>
+    <div class="col-sm-4">
+          
+    <input type="password" class="form-control input-box" id="password" name="password" placeholder="password" value={{this.password}}>
+     
+    </div>
+    <div class="continer text-center mt-4 mb-2" >
+      
+            <button type="submit" class="btn btn-primary" name="action" value="accept">Accept</button>
+            <button type="submit" class="btn btn-primary" style="margin-left:4px;" name="action" value="cancel">Cancel</button>
+        
+      </div>
+  </form>
+</div>
+
+   </div>
+{{/each}}
+ {{>footer}}
+   
